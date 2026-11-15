@@ -34,3 +34,37 @@
 6. **Feedback recebido e o que mudei:** Os testes confirmaram o funcionamento das três condições. A implementação permitiu que o sistema apresentasse a situação financeira do negócio de acordo com o saldo calculado.
 7. **Próximo passo:**  Desenvolver funcionalidades para registrar e consultar movimentações financeiras, ampliando os recursos do sistema.
 **Data do registro:** 15/11/2026 — preenchimento retrospectivo.
+### 🧩 CAMPO 01 — Instrumento de entrada
+**1a. Objetos de conhecimento identificados (mínimo 3, com vocabulário técnico):**
+1. Variáveis e tipos de dados: compreender como armazenar valores financeiros utilizando variáveis do tipo float.
+2. Operadores aritméticos: realizar cálculos de receitas, despesas e saldo.
+3. Estruturas condicionais: utilizar if, elif e else para identificar diferentes situações financeiras.
+
+
+**1b. Lacunas — o que não sei e preciso descobrir (mínimo 3, com precisão técnica):**
+1. Como impedir que o programa encerre quando alguém digitar letras em vez de números.
+2. Como permitir que o usuário registre várias movimentações sem reiniciar o programa.
+3. Como armazenar receitas e despesas para que não desapareçam ao fechar o sistema.
+**1c. Hipótese inicial em até 5 linhas — com lógica da área de formação:**
+
+> Acho que o sistema ainda precisa de algumas melhorias, porque, por enquanto, ele só calcula o saldo e mostra se está positivo,negativo ou zerado. Para funcionar melhor, seria necessário permitir que o usuário registre seus gastos e ganhos, consiga consultar essas informações e fazer alterações quando precisar.
+### 🧩 CAMPO 02 — Aprofundamento pós-aula
+
+**2a. Aprofundamento dos objetos de conhecimento (mínimo 2 referências com síntese da contribuição para a solução):**
+
+- **Referência 1:** Documentação oficial do Python — Erros e exceções.
+  https://docs.python.org/pt-br/3/tutorial/errors.html — **Contribuição:**  Explica como utilizar `try` e `except` para tratar erros. Isso pode ajudar a impedir que o sistema seja encerrado quando o usuário digitar letras no lugar de números.
+- **Referência 2:** Documentação oficial do Python — Módulo JSON.
+  **Contribuição:** Apresenta formas de salvar e carregar informações em arquivos JSON. Esse recurso pode ser utilizado para armazenar as movimentações financeiras e recuperá-las quando o programa for aberto novamente
+
+**2b. Hipótese revisada — o que mudou em relação ao Campo 01 e por quê:**
+
+> Depois de pesquisar, percebi que o sistema precisa de mais do que apenas cadastrar e consultar informações. Também é importante evitar erros quando o usuário digita valores inválidos e garantir que os dados fiquem salvos. Por isso, pretendo utilizar tratamento de exceções e armazenamento em arquivos JSON para deixar o programa mais completo e confiável.
+
+**2c. Dimensionamento inicial de recursos (recurso, quantidade estimada, justificativa técnica — mínimo 3 itens):**
+
+| RECURSO / MATERIAL / INSUMO | QUANTIDADE ESTIMADA | JUSTIFICATIVA TÉCNICA |
+|---|---|---|
+|Horas de desenvolvimento e estudo | 12 horas | Tempo estimado para implementar o cadastro de movimentações, tratamento de erros e armazenamento de dados. |
+|Arquivos do projeto | 3 arquivos | `main.py` para o programa, `dados.json` para armazenar movimentações e `README.md` para documentar o projeto. |
+|Casos de teste | 6 testes | Verificar saldos positivos, negativos e zerados, entradas inválidas, salvamento e recuperação dos dados.
